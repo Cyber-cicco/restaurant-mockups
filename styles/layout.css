@@ -1,0 +1,23 @@
+@font-face {
+  font-family: montserat;
+  src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: coromorant;
+  src: url(fonts/CormorantGaramond-Medium.ttf);
+}
+html {
+  font-family: coromorant, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+nav.navBar {
+  font-family: montserat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #174345;
+  color: white;
+}/*# sourceMappingURL=layout.css.map */
