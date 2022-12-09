@@ -1,1 +1,9 @@
-/*# sourceMappingURL=components.css.map */
+button {
+  display: flex;
+  width: 130px;
+  height: 50px;
+  font-size: 1em;
+  align-items: center;
+  color: white;
+  background-color: #4f9151;
+}/*# sourceMappingURL=components.css.map */

@@ -1,0 +1,13 @@
+$deepBlue : #174345;
+$green : #4f9151;
+$whiteBackground : #f5f8eb;
+
+button{
+    display: flex;
+    width: 130px;
+    height: 50px;
+    font-size: 1em;
+    align-items: center;
+    color: white;
+    background-color: $green;
+}

@@ -29,16 +29,17 @@
     div{
         font-size: 3em;
         display: flex;
-        width: 25%;
+        width: 33%;
         margin: 15px;
     }
     li{
         font-family: $montserat;
         font-size: 1.75em;
         display: flex;
+        align-items: center;
         flex-direction: row;
         justify-content: space-around;
-        width: 75%;
+        width: 67%;
         margin: 15px;
     }
   }
