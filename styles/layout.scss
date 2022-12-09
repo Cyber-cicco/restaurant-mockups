@@ -11,21 +11,36 @@
   $deepBlue : #174345;
   $green : #4f9151;
   $whiteBackground : #f5f8eb;
+  $montserat : montserat, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   html{
     font-family: coromorant, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
   nav.navBar{
-    font-family: montserat, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100px;
+    height: 75px;
     background-color: $deepBlue;
     color: white;
+    div{
+        font-size: 3em;
+        display: flex;
+        width: 25%;
+        margin: 15px;
+    }
+    li{
+        font-family: $montserat;
+        font-size: 1.75em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 75%;
+        margin: 15px;
+    }
   }
 
   
