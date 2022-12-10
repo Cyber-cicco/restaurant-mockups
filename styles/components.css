@@ -5,12 +5,19 @@ button {
   font-weight: bold;
   align-items: center;
   color: black;
-  background-color: #E57C6C;
-  border-radius: 15px;
   border-style: none;
   border-color: #f5f8eb;
+  background-color: #E57C6C;
+  border-radius: 15px;
   padding: 15px;
-  margin-top: 30px;
+  margin: 30px;
+}
+
+.profile {
+  background-color: #f5f8eb;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 0;
 }
 
 div.Carousel {

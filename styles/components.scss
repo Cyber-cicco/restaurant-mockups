@@ -5,6 +5,13 @@ $whiteBackground : #f5f8eb;
 //$btnColor : #FFA532;
 $btnColor : #E57C6C;
 
+@mixin button($btnColor, $btnPadding, $btnRadius, $btnMargin){
+    background-color: $btnColor;
+    border-radius: $btnRadius;
+    padding: $btnPadding;
+    margin: $btnMargin;
+}
+
 button {
     display: flex;
     height: 50px;
@@ -12,12 +19,13 @@ button {
     font-weight: bold;
     align-items: center;
     color: black;
-    background-color: $btnColor;
-    border-radius: 15px;
     border-style: none;
     border-color: $whiteBackground;
-    padding: 15px;
-    margin-top: 30px;
+    @include button($btnColor,15px ,15px ,30px);
+}
+
+.profile{
+    @include button($whiteBackground, 15px, 50%, 0);
 }
 
 div.Carousel {
