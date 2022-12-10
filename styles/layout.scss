@@ -133,6 +133,24 @@ div.description {
         font-size: 1.3em;
         padding: 30px;
     }
+    .openHours{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 55%;
+        .tabSquare{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between  ;
+            margin-bottom: 15px;
+            .weekDay{
+                display: flex;
+                width: 50%;
+                font-family: $coromorant;
+                font-size: 1.3em;
+            }
+        }
+    }
 }
 
 
@@ -140,4 +158,8 @@ div.description {
 h1 {
     font-size: 2.5rem;
     font-family: $coromorant;
+}
+.slogan{
+    font-size: 3.3rem;
+    font-weight: lighter;
 }
