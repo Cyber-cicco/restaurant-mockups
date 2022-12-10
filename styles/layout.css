@@ -40,25 +40,39 @@ nav.navBar li {
 main section.foodSection {
   display: flex;
   flex-direction: row;
-  background-color: #4f9151;
-  height: 50%;
+  background: linear-gradient(to left, #4f9151 30%, #f5f8eb);
 }
 main section.foodSection div.Carousel {
   display: flex;
   width: 50%;
   align-items: center;
-  justify-content: center;
   justify-content: flex-start;
   padding: 25px;
+  padding-left: 50px;
 }
 main section.foodSection div.Carousel div.photoHandler img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 75%;
+  max-height: 50%;
 }
 main section.foodSection div.restaurantDescription {
   display: flex;
   width: 50%;
+  font-size: 1.5rem;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #f5f8eb;
+  text-align: center;
+  padding: 25px;
+  padding-right: 50px;
+}
+main section.foodSection div.restaurantDescription button {
+  color: black;
+  border-radius: 5px;
+  border-style: double;
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 3rem;
 }/*# sourceMappingURL=layout.css.map */
