@@ -35,4 +35,30 @@ nav.navBar li {
   justify-content: space-around;
   width: 67%;
   margin: 15px;
+}
+
+main section.foodSection {
+  display: flex;
+  flex-direction: row;
+  background-color: #4f9151;
+  height: 50%;
+}
+main section.foodSection div.Carousel {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  padding: 25px;
+}
+main section.foodSection div.Carousel div.photoHandler img {
+  max-width: 100%;
+  max-height: 100%;
+}
+main section.foodSection div.restaurantDescription {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  color: #f5f8eb;
 }/*# sourceMappingURL=layout.css.map */

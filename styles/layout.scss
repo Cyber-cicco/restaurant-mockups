@@ -44,5 +44,37 @@
     }
   }
 
+  main{
+    section.foodSection{
+        display: flex;
+        flex-direction: row;
+        background-color: $green;
+        height: 50%;
+
+        div.Carousel{
+            display: flex;
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+            justify-content: flex-start;
+            padding: 25px;
+
+            div.photoHandler{
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+        }
+        div.restaurantDescription{
+            display: flex;
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+            color : $whiteBackground;
+        }
+      }
+  } 
+
   
 
