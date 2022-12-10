@@ -1,8 +1,9 @@
-$deepBlue : #174345;
+$navBar : #103832;
+$section2 : #174345;
 $green : #4f9151;
 $whiteBackground : #f5f8eb;
-$btnColor : #FFA532;
-$btnColor2 : #DF5C47;
+//$btnColor : #FFA532;
+$btnColor : #DF5C47;
 
 button {
     display: flex;
@@ -11,24 +12,27 @@ button {
     font-weight: bold;
     align-items: center;
     color: black;
-    background-color: $btnColor2;
+    background-color: $btnColor;
     border-radius: 15px;
     border-style: none;
     border-color: $whiteBackground;
     padding: 15px;
+    margin-top: 30px;
 }
 
 div.Carousel {
     display: flex;
     width: 50%;
+
     //gonna be filled with the carousel animation
     div.photoHandler {
         display: flex;
         width: 100%;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         padding: 50px;
         padding-left: 50px;
+
         img {
             max-width: 80%;
             max-height: 550px;
