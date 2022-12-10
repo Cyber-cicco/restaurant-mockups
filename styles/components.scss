@@ -1,13 +1,18 @@
 $deepBlue : #174345;
 $green : #4f9151;
 $whiteBackground : #f5f8eb;
+$orangeFlashy : #FFA532;
 
 button{
     display: flex;
-    width: 130px;
     height: 50px;
     font-size: 1em;
+    font-weight: bold;
     align-items: center;
-    color: white;
-    background-color: $green;
+    color: black;
+    background-color: $orangeFlashy;
+    border-radius: 15px;
+    border-style: none;
+    border-color: $whiteBackground;
+    padding: 15px;
 }
