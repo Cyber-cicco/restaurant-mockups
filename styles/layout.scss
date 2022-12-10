@@ -27,6 +27,7 @@
     height: 75px;
     background-color: $deepBlue;
     color: white;
+    box-shadow: 5px 5px;
     div{
         font-size: 3em;
         display: flex;
@@ -81,6 +82,8 @@
                 color : black;
                 border-radius: 5px;
                 border-style: double;
+                font-size: 1.3em;
+                padding: $sectionPadding;
             }
         }
     }

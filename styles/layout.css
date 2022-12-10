@@ -19,6 +19,7 @@ nav.navBar {
   height: 75px;
   background-color: #174345;
   color: white;
+  box-shadow: 5px 5px;
 }
 nav.navBar div {
   font-size: 3em;
@@ -70,6 +71,8 @@ main section.foodSection div.restaurantDescription button {
   color: black;
   border-radius: 5px;
   border-style: double;
+  font-size: 1.3em;
+  padding: 25px;
 }
 
 h1 {
