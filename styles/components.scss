@@ -4,7 +4,7 @@ $whiteBackground : #f5f8eb;
 $btnColor : #FFA532;
 $btnColor2 : #DF5C47;
 
-button{
+button {
     display: flex;
     height: 50px;
     font-size: 1em;
@@ -18,3 +18,20 @@ button{
     padding: 15px;
 }
 
+div.Carousel {
+    display: flex;
+    width: 50%;
+    //gonna be filled with the carousel animation
+    div.photoHandler {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 50px;
+        padding-left: 50px;
+        img {
+            max-width: 80%;
+            max-height: 550px;
+        }
+    }
+}

@@ -17,7 +17,7 @@ nav.navBar {
   align-items: center;
   width: 100%;
   height: 75px;
-  background-color: #174345;
+  background-color: #103832;
   color: white;
   box-shadow: 5px 5px;
 }
@@ -41,19 +41,7 @@ nav.navBar li {
 main section.foodSection {
   display: flex;
   flex-direction: row;
-  background: linear-gradient(to left, #4f9151 30%, #f5f8eb);
-}
-main section.foodSection div.Carousel {
-  display: flex;
-  width: 50%;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 25px;
-  padding-left: 50px;
-}
-main section.foodSection div.Carousel div.photoHandler img {
-  max-width: 75%;
-  max-height: 50%;
+  background: linear-gradient(to left, #4f9151 45%, #f5f8eb);
 }
 main section.foodSection div.restaurantDescription {
   display: flex;
@@ -67,12 +55,23 @@ main section.foodSection div.restaurantDescription {
   padding: 25px;
   padding-right: 50px;
 }
+main section.foodSection div.restaurantDescription .btnCenter {
+  display: flex;
+  justify-content: center;
+}
 main section.foodSection div.restaurantDescription button {
+  justify-content: center;
+  width: 175px;
   color: black;
   border-radius: 5px;
   border-style: double;
   font-size: 1.3em;
-  padding: 25px;
+  padding: 30px;
+}
+main section.openHours {
+  display: flex;
+  flex-direction: row-reverse;
+  background: linear-gradient(to right, #174345 45%, #f5f8eb);
 }
 
 h1 {

@@ -10,4 +10,21 @@ button {
   border-style: none;
   border-color: #f5f8eb;
   padding: 15px;
+}
+
+div.Carousel {
+  display: flex;
+  width: 50%;
+}
+div.Carousel div.photoHandler {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 50px;
+  padding-left: 50px;
+}
+div.Carousel div.photoHandler img {
+  max-width: 80%;
+  max-height: 550px;
 }/*# sourceMappingURL=components.css.map */

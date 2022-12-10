@@ -1,40 +1,67 @@
+//fonts
 @font-face {
     font-family: montserat;
     src: url(fonts/Montserrat-VariableFont_wght.ttf);
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: coromorant;
     src: url(fonts/CormorantGaramond-Medium.ttf);
-  }
+}
 
-  $deepBlue : #174345;
-  $green : #4f9151;
-  $whiteBackground : #f5f8eb;
-  $montserat : montserat, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  $sectionPadding : 25px;
+//potentially used colors
+$navBar : #103832;
+$section2 : #174345;
+$green : #4f9151;
+$whiteBackground : #f5f8eb;
 
-  html{
+//fonts
+$montserat : montserat,
+system-ui,
+-apple-system,
+BlinkMacSystemFont,
+'Segoe UI',
+Roboto,
+Oxygen,
+Ubuntu,
+Cantarell,
+'Open Sans',
+'Helvetica Neue',
+sans-serif;
+
+//padding 
+$sectionPadding : 25px;
+
+//mixin for the background of every section
+@mixin mainSection($color1, $color2, $flexDirection, $gradientDirection){
+    display: flex;
+    flex-direction: $flexDirection;
+    background: linear-gradient(to $gradientDirection, $color1 45%, $color2);
+}
+
+html {
     font-family: coromorant, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
+}
 
-  nav.navBar{
+nav.navBar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 75px;
-    background-color: $deepBlue;
+    background-color: $navBar;
     color: white;
     box-shadow: 5px 5px;
-    div{
+
+    div {
         font-size: 3em;
         display: flex;
         width: 33%;
         margin: 15px;
     }
-    li{
+
+    li {
         font-family: $montserat;
         font-size: 1.75em;
         display: flex;
@@ -44,29 +71,13 @@
         width: 67%;
         margin: 15px;
     }
-  }
+}
 
-  main{
-    section.foodSection{
-        display: flex;
-        flex-direction: row;
-        background: linear-gradient(to left, $green 30%, $whiteBackground);
+main {
+    section.foodSection {
+        @include mainSection($green, $whiteBackground, row, left);
 
-        div.Carousel{
-            display: flex;
-            width: 50%;
-            align-items: center;
-            justify-content: flex-start;
-            padding: $sectionPadding;
-            padding-left: 50px;
-            div.photoHandler{
-                img {
-                    max-width: 75%;
-                    max-height: 50%;
-                }
-            }
-        }
-        div.restaurantDescription{
+        div.restaurantDescription {
             display: flex;
             width: 50%;
             font-size: 1.5rem;
@@ -78,19 +89,30 @@
             padding: $sectionPadding;
             padding-right: 50px;
 
-            button{
-                color : black;
+            .btnCenter {
+                display: flex;
+                justify-content: center;
+            }
+
+            button {
+                justify-content: center;
+                width: 175px;
+                color: black;
                 border-radius: 5px;
                 border-style: double;
                 font-size: 1.3em;
-                padding: $sectionPadding;
+                padding: 30px;
             }
         }
     }
+    section.openHours{
+        @include mainSection($section2, $whiteBackground,  row-reverse, right)
+    }
 }
 
-h1{
+
+
+h1 {
     font-weight: lighter;
     font-size: 3rem;
 }
-
