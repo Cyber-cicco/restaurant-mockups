@@ -20,27 +20,29 @@ $btnColor2 : black;
 
 @import 'navBar.scss';
 
-html, body{
+html,
+body {
     font-family: $montserat;
-    color : $navBar;
+    color: $navBar;
     margin: 0%;
 }
 
 //mixin for the background of every section
-@mixin mainSection($color1, $color2, $flexDirection, $gradientDirection, $percentGradient){
+@mixin mainSection($color1, $color2, $flexDirection, $gradientDirection, $percentGradient) {
     display: flex;
     flex-direction: $flexDirection;
     position: relative;
     top: 65px;
     background: linear-gradient(to $gradientDirection, $color1 $percentGradient, $color2);
-    
+
 }
 
 
 main {
     display: flex;
     flex-direction: column;
-    section.headSection{
+
+    section.headSection {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -48,24 +50,57 @@ main {
         top: 65px;
         background-color: $section2;
         justify-content: center;
-        .date{
+
+        .date {
             z-index: 2;
             margin: 10px;
         }
     }
-    section.menuSectionOne{
-        @include mainSection($section1 ,$whiteBackground, row , left, 45%)
-    }
-    section.menuSectionTwo{
-        @include mainSection($section1 ,$whiteBackground, row-reverse , right, 45%)
-    }
-    section.reservSection{
 
+    section.menuSectionOne {
+        @include mainSection($section1 , $whiteBackground, row, left, 45%)
+    }
+
+    section.menuSectionTwo {
+        @include mainSection($section1 , $whiteBackground, row-reverse, right, 45%)
+    }
+
+    section.reservSection {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        top: 65px;
+        background-color: $section1;
+        justify-content: center;
+
+        .slogan {
+            padding: 30px
+        }
+
+        .btnRes {
+            margin: 20px;
+            width: 10%;
+            height: 96px;
+            text-align: center;
+            font-size: 2em;
+            display: flex;
+            justify-content: center;
+        }
     }
 }
 
-.title{
-    color : $whiteBackground;
+.resButtons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title {
+    color: $whiteBackground;
     font-family: $coromorant;
     font-size: 5.5rem;
     padding: 15px;
@@ -100,17 +135,20 @@ div.description {
         font-size: 1.3em;
         padding: 30px;
     }
-    .openHours{
+
+    .openHours {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 55%;
-        .tabSquare{
+
+        .tabSquare {
             display: flex;
             flex-direction: row;
-            justify-content: space-between  ;
+            justify-content: space-between;
             margin-bottom: 15px;
-            .weekDay{
+
+            .weekDay {
                 display: flex;
                 width: 50%;
                 font-family: $coromorant;
@@ -120,8 +158,9 @@ div.description {
     }
 }
 
-.slogan{
+.slogan {
     font-family: $coromorant;
     font-size: 3.3rem;
     font-weight: lighter;
+    text-align: center;
 }
