@@ -3,7 +3,7 @@ $section2 : #174345;
 $green : #4f9151;
 $whiteBackground : #f5f8eb;
 //$btnColor : #FFA532;
-$btnColor : #E57C6C;
+$btnColor : black;
 
 @mixin button($btnColor, $btnPadding, $btnRadius, $btnMargin){
     background-color: $btnColor;
@@ -18,7 +18,7 @@ button {
     font-size: 1em;
     font-weight: bold;
     align-items: center;
-    color: black;
+    color: $whiteBackground;
     border-style: none;
     border-color: $whiteBackground;
     @include button($btnColor,15px ,15px ,30px);
@@ -47,6 +47,8 @@ div.photoHandler {
         max-height: 550px;
     }
 }
+
+
 
 footer{
     display: flex;

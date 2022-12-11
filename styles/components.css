@@ -4,10 +4,10 @@ button {
   font-size: 1em;
   font-weight: bold;
   align-items: center;
-  color: black;
+  color: #f5f8eb;
   border-style: none;
   border-color: #f5f8eb;
-  background-color: #E57C6C;
+  background-color: black;
   border-radius: 15px;
   padding: 15px;
   margin: 30px;

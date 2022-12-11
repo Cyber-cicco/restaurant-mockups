@@ -12,9 +12,9 @@
 //potentially used colors
 $navBar : #102837;
 $section2 : #174345;
-$green : #3C583D;
+$section1 : #CCA466;
 $whiteBackground : #f5f8eb;
-$btnColor2 : #E57C6C;
+$btnColor2 : black;
 
 //fonts
 $montserat : montserat,
@@ -46,22 +46,51 @@ sans-serif;
 $sectionPadding : 25px;
 
 //mixin for the background of every section
-@mixin mainSection($color1, $color2, $flexDirection, $gradientDirection){
+@mixin mainSection($color1, $color2, $flexDirection, $gradientDirection, $percentGradient){
     display: flex;
     flex-direction: $flexDirection;
     position: relative;
     top: 65px;
-    background: linear-gradient(to $gradientDirection, $color1 45%, $color2);
+    background: linear-gradient(to $gradientDirection, $color1 $percentGradient, $color2);
+    
 }
 
 html {
     font-family: $montserat;
+    color : $navBar;
 }
 
 
 body{
     width: 100%;
 }
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    section.greenSection {
+        @include mainSection($section1, $whiteBackground, row, left, 45%);
+    }
+    section.blueSection{
+        @include mainSection($section1, $whiteBackground,  row-reverse, right, 45%);
+    }
+    section.headSection{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 65px;
+        background-color: $section2;
+        justify-content: center;
+    }
+    section.menuSectionOne{
+        @include mainSection($section1 ,$whiteBackground, row , left, 45%)
+    }
+    section.menuSectionTwo{
+        @include mainSection($section1 ,$whiteBackground, row-reverse , right, 45%)
+    }
+}
+
 nav.navBar {
     position: fixed;
     top:0px;
@@ -72,7 +101,7 @@ nav.navBar {
     align-items: center;
     width: 100%;
     height: 75px;
-    background-color: $navBar;
+    background-color: black;
     color: white;
     z-index: 1;
     div {
@@ -95,15 +124,11 @@ nav.navBar {
     }
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    section.greenSection {
-        @include mainSection($green, $whiteBackground, row, left);
-    }
-    section.blueSection{
-        @include mainSection($section2, $whiteBackground,  row-reverse, right);
-    }
+.title{
+    color : $whiteBackground;
+    font-family: $coromorant;
+    font-size: 5.5rem;
+    padding: 15px;
 }
 
 div.description {
@@ -116,7 +141,6 @@ div.description {
     align-items: center;
     padding: $sectionPadding;
     padding-right: 50px;
-    color: $whiteBackground;
     text-align: center;
 
     .btnCenter {
@@ -126,8 +150,8 @@ div.description {
 
     button {
         justify-content: center;
-        width: 175px;
-        color: black;
+        width: 250px;
+        color: $whiteBackground;
         border-radius: 5px;
         border-style: none;
         font-size: 1.3em;
