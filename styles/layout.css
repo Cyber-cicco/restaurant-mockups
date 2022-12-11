@@ -6,56 +6,6 @@
   font-family: coromorant;
   src: url(fonts/CormorantGaramond-Medium.ttf);
 }
-html {
-  font-family: montserat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #102837;
-}
-
-body {
-  width: 100%;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-}
-main section.greenSection {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  top: 65px;
-  background: linear-gradient(to left, #CCA466 45%, #f5f8eb);
-}
-main section.blueSection {
-  display: flex;
-  flex-direction: row-reverse;
-  position: relative;
-  top: 65px;
-  background: linear-gradient(to right, #CCA466 45%, #f5f8eb);
-}
-main section.headSection {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  top: 65px;
-  background-color: #174345;
-  justify-content: center;
-}
-main section.menuSectionOne {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  top: 65px;
-  background: linear-gradient(to left, #CCA466 45%, #f5f8eb);
-}
-main section.menuSectionTwo {
-  display: flex;
-  flex-direction: row-reverse;
-  position: relative;
-  top: 65px;
-  background: linear-gradient(to right, #CCA466 45%, #f5f8eb);
-}
-
 nav.navBar {
   position: fixed;
   top: 0px;
@@ -65,7 +15,7 @@ nav.navBar {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 75px;
+  height: 65px;
   background-color: black;
   color: white;
   z-index: 1;
@@ -88,11 +38,50 @@ nav.navBar li {
   margin: 15px;
 }
 
+html, body {
+  font-family: montserat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #102837;
+  margin: 0%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+main section.headSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  top: 65px;
+  background-color: #174345;
+  justify-content: center;
+}
+main section.headSection .date {
+  z-index: 2;
+  margin: 10px;
+}
+main section.menuSectionOne {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 65px;
+  background: linear-gradient(to left, #CCA466 45%, #f5f8eb);
+}
+main section.menuSectionTwo {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  top: 65px;
+  background: linear-gradient(to right, #CCA466 45%, #f5f8eb);
+}
 .title {
   color: #f5f8eb;
   font-family: coromorant, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 5.5rem;
   padding: 15px;
+  width: 100%;
+  text-align: center;
 }
 
 div.description {

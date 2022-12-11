@@ -1,0 +1,34 @@
+@import 'fonts.scss';
+
+nav.navBar {
+    position: fixed;
+    top:0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    background-color: black;
+    color: white;
+    z-index: 1;
+    div {
+        font-size: 3em;
+        display: flex;
+        width: 33%;
+        margin: 15px;
+        font-family: $coromorant;
+    }
+
+    li {
+        font-family: $montserat;
+        font-size: 1.75em;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 67%;
+        margin: 15px;
+    }
+}

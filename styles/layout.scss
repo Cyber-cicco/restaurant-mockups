@@ -17,33 +17,14 @@ $whiteBackground : #f5f8eb;
 $btnColor2 : black;
 
 //fonts
-$montserat : montserat,
-system-ui,
--apple-system,
-BlinkMacSystemFont,
-'Segoe UI',
-Roboto,
-Oxygen,
-Ubuntu,
-Cantarell,
-'Open Sans',
-'Helvetica Neue',
-sans-serif;
 
-$coromorant : coromorant,
-system-ui,
--apple-system,
-BlinkMacSystemFont,
-'Segoe UI',
-Roboto,
-Oxygen,
-Ubuntu,
-Cantarell,
-'Open Sans',
-'Helvetica Neue',
-sans-serif;
-//padding 
-$sectionPadding : 25px;
+@import 'navBar.scss';
+
+html, body{
+    font-family: $montserat;
+    color : $navBar;
+    margin: 0%;
+}
 
 //mixin for the background of every section
 @mixin mainSection($color1, $color2, $flexDirection, $gradientDirection, $percentGradient){
@@ -55,33 +36,22 @@ $sectionPadding : 25px;
     
 }
 
-html {
-    font-family: $montserat;
-    color : $navBar;
-}
-
-
-body{
-    width: 100%;
-}
-
 
 main {
     display: flex;
     flex-direction: column;
-    section.greenSection {
-        @include mainSection($section1, $whiteBackground, row, left, 45%);
-    }
-    section.blueSection{
-        @include mainSection($section1, $whiteBackground,  row-reverse, right, 45%);
-    }
     section.headSection{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         position: relative;
         top: 65px;
         background-color: $section2;
         justify-content: center;
+        .date{
+            z-index: 2;
+            margin: 10px;
+        }
     }
     section.menuSectionOne{
         @include mainSection($section1 ,$whiteBackground, row , left, 45%)
@@ -89,38 +59,8 @@ main {
     section.menuSectionTwo{
         @include mainSection($section1 ,$whiteBackground, row-reverse , right, 45%)
     }
-}
+    section.reservSection{
 
-nav.navBar {
-    position: fixed;
-    top:0px;
-    left: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 75px;
-    background-color: black;
-    color: white;
-    z-index: 1;
-    div {
-        font-size: 3em;
-        display: flex;
-        width: 33%;
-        margin: 15px;
-        font-family: $coromorant;
-    }
-
-    li {
-        font-family: $montserat;
-        font-size: 1.75em;
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 67%;
-        margin: 15px;
     }
 }
 
@@ -129,7 +69,10 @@ nav.navBar {
     font-family: $coromorant;
     font-size: 5.5rem;
     padding: 15px;
+    width: 100%;
+    text-align: center;
 }
+
 
 div.description {
     display: flex;
