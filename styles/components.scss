@@ -33,17 +33,31 @@ div.Carousel {
     width: 50%;
 
     //gonna be filled with the carousel animation
-    div.photoHandler {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        padding: 50px;
-        padding-left: 50px;
+}
+div.photoHandler {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    padding-left: 50px;
 
-        img {
-            max-width: 80%;
-            max-height: 550px;
-        }
+    img {
+        max-width: 80%;
+        max-height: 550px;
     }
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    z-index: 5;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: 25px;
+    background-color: $navBar;
+    color : white;
+    font-size: 1rem;
 }

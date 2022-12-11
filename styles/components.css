@@ -24,7 +24,8 @@ div.Carousel {
   display: flex;
   width: 50%;
 }
-div.Carousel div.photoHandler {
+
+div.photoHandler {
   display: flex;
   width: 100%;
   align-items: center;
@@ -32,7 +33,21 @@ div.Carousel div.photoHandler {
   padding: 50px;
   padding-left: 50px;
 }
-div.Carousel div.photoHandler img {
+div.photoHandler img {
   max-width: 80%;
   max-height: 550px;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  z-index: 5;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  height: 25px;
+  background-color: #103832;
+  color: white;
+  font-size: 1rem;
 }/*# sourceMappingURL=components.css.map */
