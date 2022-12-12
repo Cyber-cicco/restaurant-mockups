@@ -20,7 +20,7 @@ button {
     align-items: center;
     color: $whiteBackground;
     border-style: none;
-    border-color: $whiteBackground;
+    border-color: $whiteBackground; 
     @include button($btnColor,15px ,15px ,30px);
 }
 
