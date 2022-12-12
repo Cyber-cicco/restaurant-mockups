@@ -92,11 +92,13 @@ main {
 }
 
 .form {
+    display: flex;
+    flex-direction: column;
     background-color:darken($color: $section2, $amount: 5);
     border-radius: 20px;
-    box-sizing: border-box;
     padding: 20px;
     width: 320px;
+    align-items: center;
 }
 
 .subtitle {
@@ -108,14 +110,17 @@ main {
 }
 
 .input-container {
+    display: flex;
+    justify-content: center;
     height: 50px;
-    position: relative;
     width: 100%;
     margin-top: 40px;
+    justify-content: center;
 }
 
 
 .input {
+    display: flex;
     background-color: lighten($color: $section2, $amount: 5);
     border-radius: 12px;
     border: 0;
