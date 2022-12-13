@@ -66,15 +66,9 @@ main {
     }
 
     section.reservSection {
+        @include mainSection($section1,$whiteBackground ,row ,right ,33%);
         padding: 20px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        position: relative;
-        top: 65px;
-        background-color: $section1;
         justify-content: center;
-
         .slogan {
             padding: 30px
         }

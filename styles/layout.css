@@ -77,13 +77,12 @@ main section.menuSectionTwo {
   background: linear-gradient(to right, #CCA466 45%, #f5f8eb);
 }
 main section.reservSection {
-  padding: 20px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-direction: row;
   position: relative;
   top: 65px;
-  background-color: #CCA466;
+  background: linear-gradient(to right, #CCA466 33%, #f5f8eb);
+  padding: 20px;
   justify-content: center;
 }
 main section.reservSection .slogan {
