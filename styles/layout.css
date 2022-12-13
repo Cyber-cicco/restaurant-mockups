@@ -116,11 +116,17 @@ main section.reservSection .btnRes {
   margin-top: 10px;
 }
 
+label {
+  color: white;
+  padding-bottom: 10px;
+}
+
 .input-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 50px;
   width: 100%;
+  height: 75px;
   margin-top: 40px;
   justify-content: center;
 }
@@ -130,6 +136,7 @@ main section.reservSection .btnRes {
   background-color: #1d5658;
   border-radius: 12px;
   border: 0;
+  height: 75px;
   box-sizing: border-box;
   color: #eee;
   font-size: 18px;
