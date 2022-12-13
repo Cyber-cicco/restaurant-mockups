@@ -45,6 +45,16 @@ body {
   margin: 0%;
 }
 
+.background {
+  background-image: url("../images/leQuaiAntinque.png");
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  opacity: 0.5;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -81,31 +91,32 @@ main section.reservSection {
   flex-direction: row;
   position: relative;
   top: 65px;
-  background: linear-gradient(to right, #CCA466 33%, #f5f8eb);
   padding: 20px;
+  background-color: rgba(0, 0, 0, 0);
   justify-content: center;
 }
 main section.reservSection .slogan {
   padding: 30px;
 }
 main section.reservSection .btnRes {
-  margin: 20px;
-  width: 10%;
-  height: 96px;
+  margin: 5px;
+  height: 50px;
   text-align: center;
-  font-size: 2em;
+  font-size: 1em;
   display: flex;
   justify-content: center;
 }
 
 .form {
+  opacity: 1;
   display: flex;
   flex-direction: column;
-  background-color: #113032;
+  background-color: #174345;
   border-radius: 20px;
   padding: 20px;
-  width: 320px;
+  width: 420px;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .subtitle {
@@ -131,9 +142,21 @@ label {
   justify-content: center;
 }
 
+.resContainer {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.resContainer .btnContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .input {
   display: flex;
-  background-color: #1d5658;
+  background-color: #24686b;
   border-radius: 12px;
   border: 0;
   height: 75px;

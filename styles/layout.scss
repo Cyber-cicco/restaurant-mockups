@@ -37,6 +37,25 @@ body {
 
 }
 
+@mixin reservSection(){
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top : 65px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0);
+    justify-content: center;
+}
+
+.background{
+    background-image: url("../images/leQuaiAntinque.png");
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    opacity: 0.5;
+}
 
 main {
     display: flex;
@@ -66,19 +85,16 @@ main {
     }
 
     section.reservSection {
-        @include mainSection($section1,$whiteBackground ,row ,right ,33%);
-        padding: 20px;
-        justify-content: center;
+        @include reservSection();
         .slogan {
             padding: 30px
         }
 
         .btnRes {
-            margin: 20px;
-            width: 10%;
-            height: 96px;
+            margin: 5px;
+            height: 50px;
             text-align: center;
-            font-size: 2em;
+            font-size: 1em;
             display: flex;
             justify-content: center;
         }
@@ -86,13 +102,15 @@ main {
 }
 
 .form {
+    opacity: 1;
     display: flex;
     flex-direction: column;
-    background-color:darken($color: $section2, $amount: 5);
+    background-color:$section2;
     border-radius: 20px;
     padding: 20px;
-    width: 320px;
+    width: 420px;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .subtitle {
@@ -118,10 +136,21 @@ label{
     justify-content: center;
 }
 
+.resContainer{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .btnContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
 
 .input {
     display: flex;
-    background-color: lighten($color: $section2, $amount: 5);
+    background-color: lighten($color: $section2, $amount: 10);
     border-radius: 12px;
     border: 0;
     height: 75px;
