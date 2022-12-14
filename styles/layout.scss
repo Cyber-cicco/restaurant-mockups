@@ -37,17 +37,26 @@ body {
 
 }
 
-@mixin reservSection(){
+@mixin reservSection() {
     display: flex;
     flex-direction: row;
     position: relative;
-    top : 65px;
+    top: 65px;
     padding: 20px;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     justify-content: center;
 }
 
-.background{
+@mixin title($fontSize) {
+    color: $whiteBackground;
+    font-family: $coromorant;
+    font-size: $fontSize;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.background {
     background-image: url("../images/leQuaiAntinque.png");
     height: 100%;
     width: 100%;
@@ -86,6 +95,7 @@ main {
 
     section.reservSection {
         @include reservSection();
+
         .slogan {
             padding: 30px
         }
@@ -99,13 +109,20 @@ main {
             justify-content: center;
         }
     }
+
+    section.profilSection {
+        @include reservSection();
+        .title{
+            @include title(3rem);
+        }
+    }
 }
 
 .form {
     opacity: 1;
     display: flex;
     flex-direction: column;
-    background-color:$section2;
+    background-color: $section2;
     border-radius: 20px;
     padding: 20px;
     width: 420px;
@@ -121,7 +138,7 @@ main {
     margin-top: 10px;
 }
 
-label{
+label {
     color: white;
     padding-bottom: 10px;
 }
@@ -136,12 +153,13 @@ label{
     justify-content: center;
 }
 
-.resContainer{
+.resContainer {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
     width: 100%;
-    .btnContainer{
+
+    .btnContainer {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -173,18 +191,13 @@ label{
 }
 
 .title {
-    color: $whiteBackground;
-    font-family: $coromorant;
-    font-size: 5.5rem;
-    padding: 15px;
-    width: 100%;
-    text-align: center;
+    @include title(5.5rem);
 }
 
-.transition{
+.transition {
     height: 150px;
     width: 100%;
-    opacity: 0;    
+    opacity: 0;
 }
 
 div.description {
