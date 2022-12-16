@@ -16,6 +16,9 @@ $section1 : #CCA466;
 $whiteBackground : #f5f8eb;
 $btnColor2 : black;
 
+//sizes
+$inputBasicHeight : 75px;
+
 //fonts
 
 @import 'navBar.scss';
@@ -54,6 +57,17 @@ body {
     padding: 15px;
     width: 100%;
     text-align: center;
+}
+
+@mixin inputContainer($height){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: $height;
+    margin-top: 40px;
+    justify-content: center;
+
 }
 
 .background {
@@ -156,13 +170,11 @@ label {
 }
 
 .input-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 75px;
-    margin-top: 40px;
-    justify-content: center;
+    @include inputContainer($inputBasicHeight);
+}
+
+.input-container-textarea{
+    @include inputContainer($inputBasicHeight*3)
 }
 
 .btn-container {
@@ -192,7 +204,22 @@ label {
     background-color: lighten($color: $section2, $amount: 10);
     border-radius: 12px;
     border: 0;
-    height: 75px;
+    height: 100%;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+
+.input-textarea{
+    display: flex;
+    background-color: lighten($color: $section2, $amount: 10);
+    border-radius: 12px;
+    border: 0;
+    height: 100%;
     box-sizing: border-box;
     color: #eee;
     font-size: 18px;
