@@ -23,19 +23,28 @@ $inputBasicHeight : 75px;
 
 @import 'navBar.scss';
 
+
 html,
 body {
     font-family: $montserat;
     color: $navBar;
     margin: 0%;
+    min-width: 100%;
+    min-height: 100%;
+        @media (max-width : 1000px) {
+            font-size: 30px;
+            width: 150vw;
+        }
 }
+
+@import 'navBar.scss';
+
+
 
 //mixin for the background of every section
 @mixin mainSection($color1, $color2, $flexDirection, $gradientDirection, $percentGradient) {
     display: flex;
     flex-direction: $flexDirection;
-    position: relative;
-    top: 65px;
     background: linear-gradient(to $gradientDirection, $color1 $percentGradient, $color2);
 
 }
@@ -43,8 +52,6 @@ body {
 @mixin reservSection() {
     display: flex;
     flex-direction: row;
-    position: relative;
-    top: 65px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0);
     justify-content: center;
@@ -59,7 +66,7 @@ body {
     text-align: center;
 }
 
-@mixin inputContainer($height){
+@mixin inputContainer($height) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,18 +85,18 @@ body {
     left: 0px;
     top: 0px;
     opacity: 0.5;
+    z-index: -1;
 }
 
 main {
     display: flex;
     flex-direction: column;
+    width: 100%;
 
     section.headSection {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        position: relative;
-        top: 65px;
         background-color: $section2;
         justify-content: center;
 
@@ -141,14 +148,21 @@ main {
 }
 
 .form {
+    @media screen and (min-width : 800px) {
+        width: 420px;
+    }
+
+    @media screen and (max-width : 800px) {
+        width: 100%;
+    }
+
+    height: 100%;
     opacity: 1;
     display: flex;
     flex-direction: column;
     background-color: $section2;
     border-radius: 20px;
     padding: 20px;
-    width: 420px;
-    height: 100%;
     align-items: center;
     color: white;
     margin-bottom: 20px;
@@ -173,11 +187,11 @@ label {
     @include inputContainer($inputBasicHeight);
 }
 
-.input-container-textarea{
+.input-container-textarea {
     @include inputContainer($inputBasicHeight*3)
 }
 
-.btn-container{
+.btn-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -214,7 +228,7 @@ label {
     width: 100%;
 }
 
-.input-textarea{
+.input-textarea {
     display: flex;
     background-color: lighten($color: $section2, $amount: 10);
     border-radius: 12px;
@@ -229,7 +243,7 @@ label {
     width: 100%;
 }
 
-.input-textarea{
+.input-textarea {
     display: flex;
     background-color: lighten($color: $section2, $amount: 10);
     border-radius: 12px;
@@ -254,8 +268,8 @@ label {
 }
 
 
-a.link{
-    color : $section1;
+a.link {
+    color: $section1;
 }
 
 .title {

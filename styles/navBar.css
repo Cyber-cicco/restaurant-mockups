@@ -1,13 +1,10 @@
 nav.navBar {
-  position: fixed;
-  top: 0px;
-  left: 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 65px;
+  min-height: 0vp;
   background-color: black;
   color: white;
   z-index: 1;
