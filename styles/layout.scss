@@ -112,10 +112,13 @@ main {
 
     section.profilSection {
         @include reservSection();
-        .title{
+
+        .title {
             @include title(3rem);
+
         }
-        .btnProfile{
+
+        .btnProfile {
             margin-top: 50px;
             min-width: 132px;
             text-align: center;
@@ -162,7 +165,7 @@ label {
     justify-content: center;
 }
 
-.btn-container{
+.btn-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -208,6 +211,10 @@ label {
     justify-content: center;
 }
 
+
+a.link{
+    color : $section1;
+}
 
 .title {
     @include title(5.5rem);
