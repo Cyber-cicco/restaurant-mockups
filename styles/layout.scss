@@ -177,7 +177,7 @@ label {
     @include inputContainer($inputBasicHeight*3)
 }
 
-.btn-container {
+.btn-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -200,6 +200,21 @@ label {
 }
 
 .input {
+    display: flex;
+    background-color: lighten($color: $section2, $amount: 10);
+    border-radius: 12px;
+    border: 0;
+    height: 75px;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+
+.input-textarea{
     display: flex;
     background-color: lighten($color: $section2, $amount: 10);
     border-radius: 12px;
