@@ -123,6 +123,11 @@ main section.profilSection .title {
   width: 100%;
   text-align: center;
 }
+main section.profilSection .btnProfile {
+  margin-top: 50px;
+  min-width: 132px;
+  text-align: center;
+}
 
 .form {
   opacity: 1;
@@ -132,7 +137,9 @@ main section.profilSection .title {
   border-radius: 20px;
   padding: 20px;
   width: 420px;
+  height: 100%;
   align-items: center;
+  color: white;
   margin-bottom: 20px;
 }
 
@@ -159,6 +166,14 @@ label {
   justify-content: center;
 }
 
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55%;
+  min-width: 200px;
+}
+
 .resContainer {
   margin-top: 40px;
   display: flex;
@@ -167,6 +182,7 @@ label {
 }
 .resContainer .btnContainer {
   display: flex;
+  min-width: 200px;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -224,15 +240,6 @@ div.description {
 div.description .btnCenter {
   display: flex;
   justify-content: center;
-}
-div.description button {
-  justify-content: center;
-  width: 250px;
-  color: #f5f8eb;
-  border-radius: 5px;
-  border-style: none;
-  font-size: 1.3em;
-  padding: 30px;
 }
 div.description .openHours {
   display: flex;

@@ -115,6 +115,11 @@ main {
         .title{
             @include title(3rem);
         }
+        .btnProfile{
+            margin-top: 50px;
+            min-width: 132px;
+            text-align: center;
+        }
     }
 }
 
@@ -126,9 +131,13 @@ main {
     border-radius: 20px;
     padding: 20px;
     width: 420px;
+    height: 100%;
     align-items: center;
+    color: white;
     margin-bottom: 20px;
 }
+
+
 
 .subtitle {
     color: #eee;
@@ -153,6 +162,14 @@ label {
     justify-content: center;
 }
 
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 55%;
+    min-width: 200px;
+}
+
 .resContainer {
     margin-top: 40px;
     display: flex;
@@ -161,6 +178,7 @@ label {
 
     .btnContainer {
         display: flex;
+        min-width: 200px;
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -190,6 +208,7 @@ label {
     justify-content: center;
 }
 
+
 .title {
     @include title(5.5rem);
 }
@@ -215,16 +234,6 @@ div.description {
     .btnCenter {
         display: flex;
         justify-content: center;
-    }
-
-    button {
-        justify-content: center;
-        width: 250px;
-        color: $whiteBackground;
-        border-radius: 5px;
-        border-style: none;
-        font-size: 1.3em;
-        padding: 30px;
     }
 
     .openHours {
