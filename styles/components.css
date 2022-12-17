@@ -80,4 +80,11 @@ footer {
   background-color: black;
   color: white;
   font-size: 1rem;
+  align-items: center;
+}
+@media screen and (max-width: 1000px) {
+  footer {
+    height: 85px;
+    font-size: 1.3em;
+  }
 }/*# sourceMappingURL=components.css.map */
