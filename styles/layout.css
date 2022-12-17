@@ -171,6 +171,14 @@ main section.reservSection .btnRes {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 1000px) {
+  main section.reservSection .btnRes {
+    height: 120px;
+    margin: 20px;
+    font-size: 2em;
+    padding: 50px;
+  }
+}
 main section.profilSection {
   display: flex;
   flex-direction: row;
@@ -280,6 +288,13 @@ label {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .resContainer {
+    width: 90%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
 }
 .resContainer .btnContainer {
   display: flex;
