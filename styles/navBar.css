@@ -14,15 +14,21 @@ nav.navBar {
 }
 @media screen and (max-width: 1000px) {
   nav.navBar {
-    height: 180px;
+    height: 195px;
   }
 }
-nav.navBar div {
+nav.navBar .title {
   font-size: 3em;
   display: flex;
   width: 33%;
   margin: 15px;
   font-family: coromorant, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+@media screen and (max-width: 1000px) {
+  nav.navBar .title {
+    width: 75%;
+    font-size: 4em;
+  }
 }
 nav.navBar li {
   font-family: montserat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -34,6 +40,33 @@ nav.navBar li {
   width: 67%;
   margin: 15px;
 }
+@media screen and (max-width: 1000px) {
+  nav.navBar li {
+    width: 25%;
+    display: none;
+  }
+}
+nav.navBar .hamb {
+  display: none;
+  width: 25%;
+  width: 175px;
+  height: 175px;
+}
+@media screen and (max-width: 1000px) {
+  nav.navBar .hamb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+nav.navBar .hamb .hambline {
+  width: 80%;
+  height: 15px;
+  margin: 15px;
+  margin-right: 50px;
+  background-color: white;
+}
 
 .navBarBuffer {
   display: flex;
@@ -41,6 +74,6 @@ nav.navBar li {
 }
 @media screen and (max-width: 1000px) {
   .navBarBuffer {
-    height: 180px;
+    height: 195px;
   }
 }/*# sourceMappingURL=navBar.css.map */

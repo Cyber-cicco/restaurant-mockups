@@ -6,53 +6,6 @@
   font-family: coromorant;
   src: url(fonts/CormorantGaramond-Medium.ttf);
 }
-nav.navBar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  background-color: black;
-  color: white;
-  z-index: 1;
-  height: 65px;
-}
-@media screen and (max-width: 1000px) {
-  nav.navBar {
-    height: 180px;
-  }
-}
-nav.navBar div {
-  font-size: 3em;
-  display: flex;
-  width: 33%;
-  margin: 15px;
-  font-family: coromorant, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-nav.navBar li {
-  font-family: montserat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1.75em;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 67%;
-  margin: 15px;
-}
-
-.navBarBuffer {
-  display: flex;
-  height: 65px;
-}
-@media screen and (max-width: 1000px) {
-  .navBarBuffer {
-    height: 180px;
-  }
-}
-
 html,
 body {
   font-family: montserat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -64,55 +17,8 @@ body {
 @media (max-width: 1000px) {
   html,
 body {
-    font-size: 35px;
-    width: 150vw;
-  }
-}
-
-nav.navBar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  background-color: black;
-  color: white;
-  z-index: 1;
-  height: 65px;
-}
-@media screen and (max-width: 1000px) {
-  nav.navBar {
-    height: 180px;
-  }
-}
-nav.navBar div {
-  font-size: 3em;
-  display: flex;
-  width: 33%;
-  margin: 15px;
-  font-family: coromorant, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-nav.navBar li {
-  font-family: montserat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1.75em;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 67%;
-  margin: 15px;
-}
-
-.navBarBuffer {
-  display: flex;
-  height: 65px;
-}
-@media screen and (max-width: 1000px) {
-  .navBarBuffer {
-    height: 180px;
+    font-size: 24px;
+    width: 100%;
   }
 }
 
@@ -130,7 +36,6 @@ nav.navBar li {
 main {
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 main section.headSection {
   display: flex;
@@ -148,10 +53,24 @@ main section.menuSectionOne {
   flex-direction: row;
   background: linear-gradient(to left, #CCA466 45%, #f5f8eb);
 }
+@media screen and (max-width: 1000px) {
+  main section.menuSectionOne {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+}
 main section.menuSectionTwo {
   display: flex;
   flex-direction: row-reverse;
   background: linear-gradient(to right, #CCA466 45%, #f5f8eb);
+}
+@media screen and (max-width: 1000px) {
+  main section.menuSectionTwo {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
 }
 main section.reservSection {
   display: flex;
@@ -194,6 +113,26 @@ main section.profilSection .title {
   width: 100%;
   text-align: center;
 }
+@media screen and (max-width: 1000px) {
+  main section.profilSection .title {
+    font-size: 1.875rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main section.profilSection .title {
+    color: #f5f8eb;
+    font-family: coromorant, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 5.5rem;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1000px) and (max-width: 1000px) {
+  main section.profilSection .title {
+    font-size: 3.4375rem;
+  }
+}
 
 .form {
   width: 420px;
@@ -212,6 +151,8 @@ main section.profilSection .title {
   .form {
     width: 90%;
     margin-top: 50px;
+    margin-bottom: 125px;
+    font-size: 1.3rem;
   }
 }
 
@@ -239,13 +180,13 @@ label {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 75px;
+  height: 65px;
   margin-top: 40px;
   justify-content: center;
 }
 @media screen and (max-width: 1000px) {
   .input-container {
-    height: 225px;
+    height: 195px;
     margin-top: 96px;
     width: 92%;
   }
@@ -256,13 +197,13 @@ label {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 225px;
+  height: 195px;
   margin-top: 40px;
   justify-content: center;
 }
 @media screen and (max-width: 1000px) {
   .input-container-textarea {
-    height: 675px;
+    height: 585px;
     margin-top: 96px;
     width: 92%;
   }
@@ -311,7 +252,7 @@ label {
   height: 75px;
   box-sizing: border-box;
   color: #eee;
-  font-size: 20px;
+  font-size: 25px;
   height: 100%;
   outline: 0;
   padding: 4px 20px 0;
@@ -319,7 +260,7 @@ label {
 }
 @media screen and (max-width: 1000px) {
   .input {
-    font-size: 60px;
+    font-size: 50px;
     padding: 12px 60px 0;
   }
 }
@@ -359,10 +300,14 @@ a.link {
   width: 100%;
   text-align: center;
 }
+@media screen and (max-width: 1000px) {
+  .title {
+    font-size: 3.4375rem;
+  }
+}
 
 .transition {
   height: 150px;
-  width: 100%;
   opacity: 0;
 }
 
@@ -377,6 +322,13 @@ div.description {
   padding: 25px;
   padding-right: 50px;
   text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  div.description {
+    width: 100%;
+    padding: 0;
+    padding-right: 0;
+  }
 }
 div.description .btnCenter {
   display: flex;

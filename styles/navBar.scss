@@ -1,5 +1,5 @@
 @import 'fonts.scss';
-
+$navBarSize : 65px;
 nav.navBar {
     display: flex;
     flex-direction: row;
@@ -12,16 +12,20 @@ nav.navBar {
     background-color: black;
     color: white;
     z-index: 1;
-    height: 65px;
+    height: $navBarSize;
     @media screen and (max-width : 1000px) {
-        height: 180px;
+        height: $navBarSize*3;
     }
-    div {
+    .title {
         font-size: 3em;
         display: flex;
         width: 33%;
         margin: 15px;
         font-family: $coromorant;
+        @media screen and (max-width : 1000px) {
+            width: 75%;
+            font-size: 4em;
+        }
     }
 
     li {
@@ -33,13 +37,37 @@ nav.navBar {
         justify-content: space-around;
         width: 67%;
         margin: 15px;
+        @media screen and (max-width : 1000px) {
+            width: 25%;
+            display: none;
+        }
+    }
+    .hamb{
+        display: none;
+        width: 25%;
+        width: $navBarSize*3 - 20;
+        height: $navBarSize*3 - 20;
+        @media screen and (max-width : 1000px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hambline{
+            width: 80%;
+            height: 15px;
+            margin: 15px;
+            margin-right: 50px;
+            background-color: white;
+        }
     }
 }
 
+
 .navBarBuffer{
     display: flex;
-    height: 65px;
+    height: $navBarSize;
     @media screen and (max-width : 1000px) {
-        height: 180px;
+        height: $navBarSize*3;
     }
 }

@@ -26,7 +26,8 @@ button {
     @include button($btnColor,15px ,15px ,30px);
     @media screen and (max-width : 1000px) {
         height: $btnBasicHeight*3;
-        font-size: 1.8em;
+        font-size: 1.5em;
+        padding: 30px;
     }
 }
 
@@ -44,6 +45,9 @@ button {
 div.Carousel {
     display: flex;
     width: 50%;
+    @media screen and (max-width : 1000px) {
+        width: 100%;
+    }
 
     //gonna be filled with the carousel animation
 }
@@ -63,7 +67,7 @@ div.photoHandler {
 
 .link-container{
     @media screen and (max-width : 1000px) {
-        font-size: 1.5em;
+        font-size: 1.2em;
         margin-top: 15px;
         margin-bottom: 30px;
     }

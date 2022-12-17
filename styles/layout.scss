@@ -17,12 +17,11 @@ $whiteBackground : #f5f8eb;
 $btnColor2 : black;
 
 //sizes
-$inputBasicHeight : 75px;
-$inputFontSize : 20px;
+$inputBasicHeight : 65px;
+$inputFontSize : 25px;
 
 //fonts
-
-@import 'navBar.scss';
+@import 'fonts.scss';
 
 
 html,
@@ -33,13 +32,10 @@ body {
     min-width: 100%;
     min-height: 100%;
         @media (max-width : 1000px) {
-            font-size: 35px;
-            width: 150vw;
+            font-size: 24px;
+            width: 100%;
         }
 }
-
-@import 'navBar.scss';
-
 
 
 //mixin for the background of every section
@@ -65,6 +61,9 @@ body {
     padding: 15px;
     width: 100%;
     text-align: center;
+    @media screen and (max-width : 1000px) {
+        font-size: calc($fontSize / 1.6);
+    }
 }
 
 @mixin inputContainer($height) {
@@ -97,7 +96,6 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    width: 100%;
 
     section.headSection {
         display: flex;
@@ -113,11 +111,21 @@ main {
     }
 
     section.menuSectionOne {
-        @include mainSection($section1 , $whiteBackground, row, left, 45%)
+        @include mainSection($section1 , $whiteBackground, row, left, 45%);
+        @media screen and (max-width : 1000px) {
+            flex-direction: column;;
+            width: 100%;
+            align-items: center;
+        }
     }
 
     section.menuSectionTwo {
-        @include mainSection($section1 , $whiteBackground, row-reverse, right, 45%)
+        @include mainSection($section1 , $whiteBackground, row-reverse, right, 45%);
+        @media screen and (max-width : 1000px) {
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
     }
 
     section.reservSection {
@@ -150,6 +158,11 @@ main {
             @include title(3rem);
 
         }
+        @media screen and (max-width : 1000px) {
+            .title{
+                @include title(5.5rem)
+            }
+        }
     }
 }
 
@@ -158,6 +171,8 @@ main {
     @media screen and (max-width : 1000px) {
         width: 90%;
         margin-top: 50px;
+        margin-bottom: 75px+50px;
+        font-size: 1.3rem;
     }
 
     height: 100%;
@@ -245,7 +260,7 @@ label {
     padding: 4px 20px 0;
     width: 100%;
     @media screen and (max-width : 1000px) {
-        font-size: $inputFontSize*3;
+        font-size: $inputFontSize * 2;
         padding: 12px 60px 0;
     }
 }
@@ -280,13 +295,13 @@ a.link {
     color: $section1;
 }
 
+
 .title {
     @include title(5.5rem);
 }
 
 .transition {
     height: 150px;
-    width: 100%;
     opacity: 0;
 }
 
@@ -301,6 +316,11 @@ div.description {
     padding: $sectionPadding;
     padding-right: 50px;
     text-align: center;
+    @media screen and (max-width : 1000px) {
+        width: 100%;
+        padding: 0;
+        padding-right: 0;
+    }
 
     .btnCenter {
         display: flex;
