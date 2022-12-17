@@ -6,10 +6,16 @@ nav.navBar {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    min-height: 0vp;
+    position: fixed;
+    top: 0px;
+    left: 0px;
     background-color: black;
     color: white;
     z-index: 1;
+    height: 65px;
+    @media screen and (max-width : 800px) {
+        height: 165px;
+    }
     div {
         font-size: 3em;
         display: flex;
