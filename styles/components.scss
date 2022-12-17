@@ -2,8 +2,9 @@ $navBar : #103832;
 $section2 : #174345;
 $green : #4f9151;
 $whiteBackground : #f5f8eb;
-//$btnColor : #FFA532;
 $btnColor : black;
+
+$btnBasicHeight : 50px;
 
 @mixin button($btnColor, $btnPadding, $btnRadius, $btnMargin){
     background-color: $btnColor;
@@ -14,7 +15,7 @@ $btnColor : black;
 
 button {
     display: flex;
-    height: 50px;
+    height: $btnBasicHeight;
     font-size: 1em;
     font-weight: bold;
     align-items: center;
@@ -23,6 +24,10 @@ button {
     border-style: none;
     border-color: $whiteBackground; 
     @include button($btnColor,15px ,15px ,30px);
+    @media screen and (max-width : 1000px) {
+        height: $btnBasicHeight*3;
+        font-size: 1.8em;
+    }
 }
 
 .profile{
@@ -30,7 +35,10 @@ button {
 }
 
 .btnProfile{
-    @include button(darken($section2, 7), 15px, 15px, 30px)
+    @include button(darken($section2, 7), 15px, 15px, 30px);
+    @media screen and (max-width : 1000px) {
+        @include button(darken($section2, 7),15px*2.4 ,15px ,30px*2.4 )
+    }
 }
 
 div.Carousel {
@@ -53,7 +61,13 @@ div.photoHandler {
     }
 }
 
-
+.link-container{
+    @media screen and (max-width : 1000px) {
+        font-size: 1.5em;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+}
 
 footer{
     display: flex;

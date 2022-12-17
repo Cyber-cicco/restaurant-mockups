@@ -18,6 +18,7 @@ $btnColor2 : black;
 
 //sizes
 $inputBasicHeight : 75px;
+$inputFontSize : 20px;
 
 //fonts
 
@@ -32,7 +33,7 @@ body {
     min-width: 100%;
     min-height: 100%;
         @media (max-width : 1000px) {
-            font-size: 30px;
+            font-size: 35px;
             width: 150vw;
         }
 }
@@ -73,6 +74,11 @@ body {
     width: 100%;
     height: $height;
     margin-top: 40px;
+    @media screen and (max-width : 1000px) {
+        height: $height *3;
+        margin-top: 40px*2.4;
+        width: 92%;
+    }
     justify-content: center;
 
 }
@@ -138,22 +144,14 @@ main {
             @include title(3rem);
 
         }
-
-        .btnProfile {
-            margin-top: 50px;
-            min-width: 132px;
-            text-align: center;
-        }
     }
 }
 
 .form {
-    @media screen and (min-width : 800px) {
-        width: 420px;
-    }
-
-    @media screen and (max-width : 800px) {
-        width: 100%;
+    width: 420px;
+    @media screen and (max-width : 1000px) {
+        width: 90%;
+        margin-top: 50px;
     }
 
     height: 100%;
@@ -181,6 +179,10 @@ main {
 label {
     color: white;
     padding-bottom: 10px;
+    @media screen and (max-width : 1000px) {
+        padding-bottom: 30px;
+        font-size: 1.2em;
+    }
 }
 
 .input-container {
@@ -197,6 +199,11 @@ label {
     justify-content: center;
     width: 55%;
     min-width: 200px;
+    @media screen and (max-width : 1000px) {
+        height: 260px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 }
 
 .resContainer {
@@ -221,11 +228,15 @@ label {
     height: 75px;
     box-sizing: border-box;
     color: #eee;
-    font-size: 18px;
+    font-size: $inputFontSize;
     height: 100%;
     outline: 0;
     padding: 4px 20px 0;
     width: 100%;
+    @media screen and (max-width : 1000px) {
+        font-size: $inputFontSize*3;
+        padding: 12px 60px 0;
+    }
 }
 
 .input-textarea {
@@ -243,20 +254,6 @@ label {
     width: 100%;
 }
 
-.input-textarea {
-    display: flex;
-    background-color: lighten($color: $section2, $amount: 10);
-    border-radius: 12px;
-    border: 0;
-    height: 100%;
-    box-sizing: border-box;
-    color: #eee;
-    font-size: 18px;
-    height: 100%;
-    outline: 0;
-    padding: 4px 20px 0;
-    width: 100%;
-}
 
 
 .resButtons {

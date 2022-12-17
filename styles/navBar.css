@@ -12,9 +12,9 @@ nav.navBar {
   z-index: 1;
   height: 65px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   nav.navBar {
-    height: 165px;
+    height: 180px;
   }
 }
 nav.navBar div {
@@ -33,4 +33,14 @@ nav.navBar li {
   justify-content: space-around;
   width: 67%;
   margin: 15px;
+}
+
+.navBarBuffer {
+  display: flex;
+  height: 65px;
+}
+@media screen and (max-width: 1000px) {
+  .navBarBuffer {
+    height: 180px;
+  }
 }/*# sourceMappingURL=navBar.css.map */

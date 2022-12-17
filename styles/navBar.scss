@@ -13,8 +13,8 @@ nav.navBar {
     color: white;
     z-index: 1;
     height: 65px;
-    @media screen and (max-width : 800px) {
-        height: 165px;
+    @media screen and (max-width : 1000px) {
+        height: 180px;
     }
     div {
         font-size: 3em;
@@ -33,5 +33,13 @@ nav.navBar {
         justify-content: space-around;
         width: 67%;
         margin: 15px;
+    }
+}
+
+.navBarBuffer{
+    display: flex;
+    height: 65px;
+    @media screen and (max-width : 1000px) {
+        height: 180px;
     }
 }

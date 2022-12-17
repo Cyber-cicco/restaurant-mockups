@@ -13,6 +13,12 @@ button {
   padding: 15px;
   margin: 30px;
 }
+@media screen and (max-width: 1000px) {
+  button {
+    height: 150px;
+    font-size: 1.8em;
+  }
+}
 
 .profile {
   background-color: #f5f8eb;
@@ -26,6 +32,14 @@ button {
   border-radius: 15px;
   padding: 15px;
   margin: 30px;
+}
+@media screen and (max-width: 1000px) {
+  .btnProfile {
+    background-color: #0e292a;
+    border-radius: 15px;
+    padding: 36px;
+    margin: 72px;
+  }
 }
 
 div.Carousel {
@@ -44,6 +58,14 @@ div.photoHandler {
 div.photoHandler img {
   max-width: 80%;
   max-height: 550px;
+}
+
+@media screen and (max-width: 1000px) {
+  .link-container {
+    font-size: 1.5em;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
 }
 
 footer {
