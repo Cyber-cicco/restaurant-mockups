@@ -17,7 +17,7 @@ $whiteBackground : #f5f8eb;
 $btnColor2 : black;
 
 //sizes
-$inputBasicHeight : 65px;
+$inputBasicHeight : 75px;
 $inputFontSize : 25px;
 
 //fonts
@@ -74,7 +74,7 @@ body {
     height: $height;
     margin-top: 40px;
     @media screen and (max-width : 1000px) {
-        height: $height *3;
+        height: $height *2.5;
         margin-top: 40px*2.4;
         width: 92%;
     }
