@@ -2,6 +2,5 @@
 
 Author : Abel Ciccoli
 
-Website of a fictionnal restaurant
-At this point, it's only static HTML pages mockups
+HTML and SASS based mockups for a website of a fictional restaurant called "Le Quai Antique"
 
